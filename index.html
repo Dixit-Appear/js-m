@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>Playground - JavaScript 101</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <body>
-    <p style="margin-top: 40vh; text-align: center; font: normal 24px monospace;">
-      Open the console 🤓
-    </p>
-
-    <!-- Add some HTML in here -->
-
+    <div class="container text-center">
+      <form id="search-movies" class="form-inline">
+        <input type="text" id="keyword" class="form-control" placeholder="Find movies">
+        <input type="submit" class="btn btn-primary" value="Search">
+      </form>
+      <ul id="results" class="list-inline"></ul>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
