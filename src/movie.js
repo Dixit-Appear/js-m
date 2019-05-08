@@ -3,8 +3,7 @@ const results = document.querySelector("#results");
 const updateResults = (data) => {
   data.Search.forEach((movie) => {
     const newMovie = `<li>
-      <img src="${movie.Poster}" alt="">
-      <p>${movie.Title}</p>
+      <img src="${movie.Poster}" alt="" height="120">
     </li>`;
     results.insertAdjacentHTML("beforeend", newMovie);
   });
